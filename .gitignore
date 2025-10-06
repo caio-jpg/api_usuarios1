@@ -23,6 +23,25 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
+.idea/
+*.iml
+*.log
+.env
+.env.local
+.env.*.local
+.vscode/
+*.swp
+*.swo
+.firebase/
+__pycache__/
+*.pyc
+.tmp/
+*.tmp
+.yarnrc.yml
+.yarn/
+pnpm-lock.yaml
+package-lock.json
 
 # debug
 npm-debug.log*
