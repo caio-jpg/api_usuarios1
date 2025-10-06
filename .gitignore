@@ -1,64 +1,146 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
 /node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
+
+/.pnp# dependencies
+
+.pnp.js/node_modules
+
+.yarn/*/.pnp
+
+!.yarn/patches.pnp.*
+
+!.yarn/plugins.yarn/*
+
+!.yarn/releases!.yarn/patches
+
+!.yarn/sdks!.yarn/plugins
+
+!.yarn/versions!.yarn/releases
+
 !.yarn/versions
 
-# testing
+# Testing
+
+/coverage# testing
+
 /coverage
 
-# next.js
-/.next/
-/out/
+# Next.js
 
-# production
+/.next/# next.js
+
+/out//.next/
+
+/build/out/
+
+.next
+
+next-env.d.ts# production
+
 /build
 
-# misc
-.DS_Store
+# Production
+
+/build# misc
+
+/dist.DS_Store
+
 *.pem
-Thumbs.db
-.idea/
-*.iml
-*.log
-.env
-.env.local
-.env.*.local
+
+# Environment VariablesThumbs.db
+
+.env.idea/
+
+.env.local*.iml
+
+.env.development.local*.log
+
+.env.test.local.env
+
+.env.production.local.env.local
+
+.env.*.env.*.local
+
 .vscode/
-*.swp
-*.swo
-.firebase/
-__pycache__/
-*.pyc
-.tmp/
+
+# Debug Logs*.swp
+
+npm-debug.log**.swo
+
+yarn-debug.log*.firebase/
+
+yarn-error.log*__pycache__/
+
+.pnpm-debug.log**.pyc
+
+*.log.tmp/
+
 *.tmp
-.yarnrc.yml
-.yarn/
-pnpm-lock.yaml
-package-lock.json
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# IDE.yarnrc.yml
 
-# vercel
-.vercel
+.idea/.yarn/
 
-# typescript
+.vscode/pnpm-lock.yaml
+
+*.sublime-projectpackage-lock.json
+
+*.sublime-workspace
+
+*.suo# debug
+
+*.ntvs*npm-debug.log*
+
+*.njsprojyarn-debug.log*
+
+*.slnyarn-error.log*
+
+*.sw?.pnpm-debug.log*
+
+
+
+# OS# vercel
+
+.DS_Store.vercel
+
+Thumbs.db
+
+*.pem# typescript
+
 *.tsbuildinfo
-next-env.d.ts
+
+# TypeScriptnext-env.d.ts
+
+*.tsbuildinfo
 
 .genkit/*
-.env*
+
+# Vercel.env*
+
+.vercel
 
 # firebase
-firebase-debug.log
-firestore-debug.log
+
+# Cachefirebase-debug.log
+
+.cache/firestore-debug.log
+.temp/
+.tmp/
+*.cache
+
+# Build outputs
+dist/
+build/
+*.min.js
+*.min.css
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
