@@ -16,4 +16,4 @@
 - Fonte: 'Inter', sans-serif, para garantir uma leitura clara e agradável em toda a interface.
 - Ícones: Utilizar ícones claros e intuitivos para representar as diferentes ações e recursos da API na documentação Swagger.
 - Layout: Design limpo e responsivo para facilitar a navegação e o uso em diferentes dispositivos.
-- Animação: Transições suaves e sutis para melhorar a experiência do usuário ao interagir com a documentação Swagger.
+- Animação: Transições suaves e sutis para melhorar a experiência do usuário ao interagir com a documentação Swagger. 

@@ -3,7 +3,7 @@ interface CodeBlockProps {
   language?: string;
 }
 
-export function CodeBlock({ code, language = 'bash' }: CodeBlockProps) {
+ export function CodeBlock({ code, language = 'bash' }: CodeBlockProps) {
   return (
     <div className="relative">
       <pre className="bg-muted/50 text-sm p-4 rounded-lg overflow-x-auto">
